@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./contact.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -42,18 +43,35 @@
     <!-- Contact Page -->
     <!-- Contact Us -->
     <div class="container my-5">
-      <h1 class="text-center">Contact Us</h1>
-      <p class="text-center">Get in touch with us:</p>
+      <h1 class="text-center">Contact Me</h1>
+      <p class="text-center">Get in touch with me:</p>
       <div class="row">
         <div class="col-md-6 mx-auto">
-          <form>
+          <form
+            id="contact-form"
+            method="POST"
+            action="https://formspree.io/f/xdovglrl"
+          >
             <div class="form-group">
               <label for="name">Name</label>
               <input
                 type="text"
                 class="form-control"
                 id="name"
+                name="name"
                 placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="surname">Surname</label>
+              <input
+                type="text"
+                class="form-control"
+                id="surname"
+                name="surname"
+                placeholder="Enter your surname"
+                required
               />
             </div>
             <div class="form-group">
@@ -62,7 +80,9 @@
                 type="email"
                 class="form-control"
                 id="email"
+                name="_replyto"
                 placeholder="Enter your email"
+                required
               />
             </div>
             <div class="form-group">
@@ -70,8 +90,10 @@
               <textarea
                 class="form-control"
                 id="message"
+                name="message"
                 rows="3"
                 placeholder="Enter your message"
+                required
               ></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
@@ -86,18 +108,12 @@
         color: #fff;
         margin-top: 50px;
       }
-      .footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 60px;
-      }
     </style>
-    <footer class="footer custom-footer py-3">
-      <div class="container">
+    <footer class="footer footer-fluid py-3 custom-footer">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-md-6">
-            <p class="text-muted">&copy; Malwandla's bakery 2023</p>
+            <p class="text-muted">&copy; Malwandla Hlungwani 2023</p>
           </div>
           <div class="col-md-6">
             <ul class="list-inline float-right">

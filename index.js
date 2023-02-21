@@ -19,20 +19,32 @@
 //   skillsList.appendChild(listItem);
 // });
 
-// About me page section
+// Home page section
 
-const projects = [
-  "Netflix Clone",
-  "Spotify Clone",
-  "E-commerce website",
-  "Social media app",
-  "And many more",
+const firstName = "Malwandla";
+const lastName = "Hlungwani";
+//const bio =
+// "A driven and passionate young professional with an outstanding academic record and a strong desire to excel in the IT/Tech industry.";
+const projectsArray = [
+  "web and mobile-responsive designs, e-commerce sites, and React applications.",
 ];
 
-const projectsList = document.getElementById("projects-list");
+const education = `Wits University and Gidjana High School,
+   with A grades in Multivaiable Calculus, 
+   Abstruct Mathematics and physical Sciences, 
+   Mathematics respectively`;
+const email = "hlungwanimalwandlashaun@gmail.com";
+const phone = "0609439412";
 
-projects.forEach((project) => {
-  const listItem = document.createElement("li");
-  listItem.textContent = project;
-  projectsList.appendChild(listItem);
-});
+document.getElementById("firstName").textContent = firstName;
+document.getElementById("lastName").textContent = lastName;
+//document.getElementById("bio").textContent = bio;
+document.getElementById("projectsArray").textContent = projectsArray.forEach(
+  (item) => item
+);
+document.getElementById("education").textContent = education;
+document.getElementById("email").textContent = email;
+document.getElementById("phone").textContent = phone;
+
+// About me page section
+
